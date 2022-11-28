@@ -45,5 +45,12 @@ function performOperation(){
     }
         
 }
+
 // Create a function reset to clear all inputs and operators before starting another opeartion.
+function reset(){
+    operator = (prompt("Welcome! Select an Operator (a).Addition, (b).Subtraction, (c).Multiplication, (d).Division, (e).Modulus.: ")).toLowerCase();
+    inputX = parseInt(prompt("Insert your First Variable.: "));
+    inputY = parseInt(prompt("Insert your Second Variable.: "));
+}
+
 // Create a function performAnotherOperation to prompt the user if he wants to carry out another opeartion and accept input.
