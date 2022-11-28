@@ -35,6 +35,15 @@ function operation(){
         console.log("Please Input a Valid Number");
     }
 }
+
 // Create performOperation function to select and opeartor then perform the opeartion selected on inputs.
+function performOperation(){
+    if((operator === "a" || operator === "b" || operator === "c" || operator === "d" || operator === "e") && operator != " "){
+       operation();
+    } else{
+        console.log("Please Select a Valid Operator!");
+    }
+        
+}
 // Create a function reset to clear all inputs and operators before starting another opeartion.
 // Create a function performAnotherOperation to prompt the user if he wants to carry out another opeartion and accept input.
