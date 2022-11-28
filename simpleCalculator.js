@@ -54,3 +54,17 @@ function reset(){
 }
 
 // Create a function performAnotherOperation to prompt the user if he wants to carry out another opeartion and accept input.
+function performAnotherOperation(){
+    const agree = "yes";
+    const disagree = "no";
+    const response = (prompt("Do you want to Perform Another Operation? yes(y) or no(n)!: ")).toLowerCase();
+    if(response === agree || response === "y"){
+        reset();
+        performOperation();
+    } else if(response === disagree || response === "n"){
+        console.log("Thank you for Using the Calculator!")
+    }else{
+        console.log("Please Make a valid Selection!");
+        performAnotherOperation();
+    }
+}
