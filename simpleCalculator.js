@@ -68,3 +68,5 @@ function performAnotherOperation(){
         performAnotherOperation();
     }
 }
+
+performOperation();
