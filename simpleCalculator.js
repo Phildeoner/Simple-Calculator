@@ -43,7 +43,7 @@ function performOperation(){
     } else{
         console.log("Please Select a Valid Operator!");
     }
-        
+    performAnotherOperation();   
 }
 
 // Create a function reset to clear all inputs and operators before starting another opeartion.
